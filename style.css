@@ -1,12 +1,17 @@
 body {
     background: #ffffff;
   	font-family: "Trebuchet MS", "Arial", sans-serif;
+    background-image: url("img/bg.jpg");
   	box-sizing: border-box;
   	display: flex;
     background-color: #f7f7f7;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
 }
 
 .center-wrapper {
+    background-color: #f7f7f7;
     width: 643px;
     box-sizing: border-box;
     margin: 0 auto;
@@ -15,15 +20,19 @@ body {
 .header {
     display: flex;
 	  justify-content: space-between;
-    padding-top: 10px;
+    padding: 10px 30px;
 }
 
 .header__user-name {
   	width: 130px;
-  	padding-right: 100px;
+  	padding-right: 80px;
     position: relative;
     padding-top: 15px;
     text-align: right;
+}
+
+.header__other-font {
+    font-weight: 700;
 }
 
 .header__user-name::after {
@@ -34,153 +43,240 @@ body {
     background-size: contain;
     width: 90px;
     height: 60px;
-    right: 0;
+    right: -20px;
     top: 0;
     border-radius: 10px;
  }
 
 .characteristic {
-  display: flex;
-  background-color: #cccccc;
-  padding: 5px 20px;
-  color: white;
+    display: flex;
+    background-color: #cccccc;
+    padding: 5px 20px;
+    color: white;
 }
 
 .characteristic__item {
     padding-right: 35px;
 }
 
+.characteristic__view {
+    background-color: #f7f7f7;
+    padding: 3px 5px;
+    border-radius: 20px;
+    color: #222222;
+    margin-right: 5px;
+}
+
 .banner {
     background-image: url("img/newYear-fon.png");
+    background-color: #5b3c2c;
     background-repeat: no-repeat;
     width: 100%;
     height: auto;
     right: 0;
     top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .banner__title {
-  color: white;
-  text-align: center;
-  padding: 30px 20px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    padding: 90px 20px 25px 20px;
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: 400;
 }
 
 .banner__text {
-  color: white;
-  text-align: center;
-  padding: 30px 20px;
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding: 0 170px 90px 170px;
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 400;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .container__text {
-  text-align: center;
-  padding: 0 40px;
+    margin: 0;
+    text-align: center;
+    padding: 0 40px;
+    margin-bottom: 50px;
 }
 
 .container__button {
-  color: white;
-  padding: 15px 10px;
-  background-color: #e7402f;
-  border: none;
-  border-radius: 30px;
-  margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    padding: 15px 30px;
+    background-color: #e7402f;
+    border: none;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .container__notice {
-  padding-left: 30px;
-  padding-right: 30px;
-  color: #aaaaaa;
-  font-size: 14px;
-  font-height: 24px;
-  font-weight: 400;
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+.container__notice-underline {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.container__notice-bold {
+    font-weight: 700;
 }
 
 .new {
-  position: relative;
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
-.new::after {
-    content: "";
-    position: absolute;
-    background-image: url("img/winter-foto.jpg");
-    background-repeat: no-repeat;
-    width: 240px;
-    height: 555px;
-    right: 0;
-    top: 0;
-    margin-bottom: 20px;
+.new__title {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    margin-right: 230px;
+    padding-left: 30px;
+    padding-right: 5px;
+    background-color: #e7402f;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.new__text {
+    margin: 0;
+    padding: 25px 30px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.new__wrapper-img {
+    margin-left: auto;
+    width: 100%;
+}
+
+.new__wrapper1 {
+    width: 60%;
+    box-sizing: border-box;
 }
 
 .new__wrapper {
-  width: 400px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 .new__information {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+    padding: 0 30px;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 .new__button {
-  width: 303px;
-  box-sizing: border-box;
-  border: 1px solid #e7402f;
-  padding: 10px;
-  color: #e7402f;
-  border-radius: 20px;
-  background-color: #f7f7f7;
-  margin: 20px auto;
+    width: 75%;
+    box-sizing: border-box;
+    border: 2px solid #e7402f;
+    padding: 12px;
+    color: #e7402f;
+    border-radius: 20px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .new__notis {
-  margin-top: 40px;
-  margin-bottom: 100px;
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.new__notis--normal {
+    margin-top: 25px;
+    color: #aaaaaa;
+}
+
+.new__notis--opacity {
+    color: #b0b0b0;
+    opacity: 0.7;
+}
+
+.new__notis--red {
+    color: #e7402f;
 }
 
 .inspector {
-  background-color: #1e8cb7;
-  display: flex;
-  padding: 15px;
-  color: #f7f7f7;
+    background-color: #1e8cb7;
+    display: flex;
+    padding: 30px;
+    color: #f7f7f7;
+}
+
+.inspector__title-img {
+    padding-bottom: 35px;
+}
+
+.inspector__img {
+    padding-left: 10px;
 }
 
 .footer {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
+    background-color: #ffffff;
+    padding: 30px 30px 10px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__img {
+    padding-right: 13px;
 }
 
 .footer__social-button {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 .footer__text {
-  text-align: center;
+    text-align: center;
+    color: #999999;
+}
+
+.footer__text-bold {
+    font-weight: 700;
+    color: #000000;
 }
 
 .footer__text-settings {
-  text-align: center;
+    color: #999999;
+    text-align: center;
 }
 
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
