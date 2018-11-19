@@ -1,0 +1,186 @@
+body {
+    background: #ffffff;
+  	font-family: "Trebuchet MS", "Arial", sans-serif;
+  	box-sizing: border-box;
+  	display: flex;
+    background-color: #f7f7f7;
+}
+
+.center-wrapper {
+    width: 643px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+	  justify-content: space-between;
+    padding-top: 10px;
+}
+
+.header__user-name {
+  	width: 130px;
+  	padding-right: 100px;
+    position: relative;
+    padding-top: 15px;
+    text-align: right;
+}
+
+.header__user-name::after {
+    content: "";
+    position: absolute;
+    background-image: url("img/foto.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 90px;
+    height: 60px;
+    right: 0;
+    top: 0;
+    border-radius: 10px;
+ }
+
+.characteristic {
+  display: flex;
+  background-color: #cccccc;
+  padding: 5px 20px;
+  color: white;
+}
+
+.characteristic__item {
+    padding-right: 35px;
+}
+
+.banner {
+    background-image: url("img/newYear-fon.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    right: 0;
+    top: 0;
+    margin-bottom: 20px;
+}
+
+.banner__title {
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.banner__text {
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__text {
+  text-align: center;
+  padding: 0 40px;
+}
+
+.container__button {
+  color: white;
+  padding: 15px 10px;
+  background-color: #e7402f;
+  border: none;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+
+.container__notice {
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #aaaaaa;
+  font-size: 14px;
+  font-height: 24px;
+  font-weight: 400;
+}
+
+.new {
+  position: relative;
+}
+
+.new::after {
+    content: "";
+    position: absolute;
+    background-image: url("img/winter-foto.jpg");
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 555px;
+    right: 0;
+    top: 0;
+    margin-bottom: 20px;
+}
+
+.new__wrapper {
+  width: 400px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.new__information {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.new__button {
+  width: 303px;
+  box-sizing: border-box;
+  border: 1px solid #e7402f;
+  padding: 10px;
+  color: #e7402f;
+  border-radius: 20px;
+  background-color: #f7f7f7;
+  margin: 20px auto;
+}
+
+.new__notis {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.inspector {
+  background-color: #1e8cb7;
+  display: flex;
+  padding: 15px;
+  color: #f7f7f7;
+}
+
+.footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__social-button {
+  margin: 0 auto;
+}
+
+.footer__text {
+  text-align: center;
+}
+
+.footer__text-settings {
+  text-align: center;
+}
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
