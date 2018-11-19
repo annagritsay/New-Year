@@ -12,7 +12,7 @@ body {
 
 .center-wrapper {
     background-color: #f7f7f7;
-    width: 643px;
+    width: 640px;
     box-sizing: border-box;
     margin: 0 auto;
 }
@@ -90,6 +90,8 @@ body {
 }
 
 .banner__text {
+    width: 640px;
+    box-sizing: border-box;
     margin: 0;
     color: white;
     text-align: center;
@@ -150,6 +152,7 @@ body {
 }
 
 .new__title {
+    width: 45%;
     margin: 0;
     padding: 0;
     margin-top: 20px;
